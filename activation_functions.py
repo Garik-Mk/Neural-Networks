@@ -49,6 +49,16 @@ def dsigmoid(value: float) -> float:
 
     return (sigmoid(value) * (1 - sigmoid(value)))
 
+def softplus(value: float) -> float:
+    """This activation function is a smooth continuous version of reluLayer.
+    You can incorporate this layer into the deep neural networks you define
+    for actors in reinforcement learning agents."""
+    return np.log(1 + np.exp(value))
+
+def dsoftplus(value: float) -> float:
+    """Derivative of softplus is sigmoid"""
+    return sigmoid(value)
+
 def tanh(value: float) -> float:
     """Hyperbolic Tangent.
 
