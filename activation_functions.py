@@ -178,7 +178,5 @@ def dgelu(value: float) -> float:
     pass
     #TODO
 
-def selu(value: float, alhpa: float) -> float:
-    pass
 
 
