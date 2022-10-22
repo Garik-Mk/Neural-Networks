@@ -73,6 +73,10 @@ def tanh(value: float) -> float:
 
     return (pos_exponent - neg_exponent) / (pos_exponent + neg_exponent)
 
+def tanh_param(value: float, alpha: float) -> float:
+    """Hyperbolic Tangent with parameter."""
+    return tanh(value/alpha)
+
 def dtanh(value: float) -> float:
     """Derivative of Hyperbolic Tangent.
     
@@ -187,6 +191,3 @@ def dgelu(value: float) -> float:
     """Derivative of gelu"""
     pass
     #TODO
-
-
-
