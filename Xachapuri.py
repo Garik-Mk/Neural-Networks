@@ -27,9 +27,5 @@ class Layer(object):
             temp = self.activation(temp)
             res.append(temp)
         return res
-    
-
-F = Layer()
-F.add_neuron('relu')
-
+   
 
